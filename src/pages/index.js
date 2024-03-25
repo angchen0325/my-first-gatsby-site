@@ -1,21 +1,22 @@
 import * as React from "react"
+import {Link} from "gatsby"
 
-// const pageStyles = {
-//   color: "#232129",
-//   padding: 96,
-//   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-// }
-// const headingStyles = {
-//   marginTop: 0,
-//   marginBottom: 64,
-//   maxWidth: 320,
-// }
+const pageStyles = {
+  color: "#232129",
+  padding: 96,
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
+const headingStyles = {
+  marginTop: 0,
+  marginBottom: 64,
+  maxWidth: 320,
+}
 // const headingAccentStyles = {
 //   color: "#663399",
 // }
-// const paragraphStyles = {
-//   marginBottom: 48,
-// }
+const paragraphStyles = {
+  marginBottom: 48,
+}
 // const codeStyles = {
 //   color: "#8A6534",
 //   padding: 4,
@@ -178,9 +179,11 @@ import * as React from "react"
 
 const IndexPage = () => {
   return (
-    <main>
-      <h1>Welcome to my Gatsby site!</h1>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+    <main style={pageStyles}>
+      <h1 style={headingStyles}>Welcome to my Gatsby site!</h1>
+      <Link to='/about'>About Me</Link>
+      <p style={paragraphStyles}>I'm making this by following the Gatsby Tutorial.
+      </p>
     </main>
   )
 }
