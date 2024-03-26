@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Link} from "gatsby"
+import Layout from "../components/layout"
 
 const pageStyles = {
   color: "#232129",
@@ -179,12 +179,15 @@ const paragraphStyles = {
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Welcome to my Gatsby site!</h1>
-      <Link to='/about'>About Me</Link>
-      <p style={paragraphStyles}>I'm making this by following the Gatsby Tutorial.
-      </p>
-    </main>
+    // <main style={pageStyles}>
+    //   <h1 style={headingStyles}>Welcome to my Gatsby site!</h1>
+    //   <Link to='/about'>About Me</Link>
+    //   <p style={paragraphStyles}>I'm making this by following the Gatsby Tutorial.
+    //   </p>
+    // </main>
+    <Layout pageTitle={"Home Page"}>
+      <p>I'm making this by following the Gatsby Tutorial.</p>
+    </Layout>
   )
 }
 
