@@ -21,11 +21,9 @@ const AboutPage = () => {
     return (
         <main style={pageStyles}>
             <h1 style={headingStyles}>About Me</h1>
+            <Link to="/">Back to Home</Link>.
             <p style={paragraphStyles}>
                 Hi there! I'm the proud creator of this site, which I built with Gatsby.
-                <br />
-                <br />
-                <Link to="/">Back to Home</Link>.
             </p>
         </main>
     )
