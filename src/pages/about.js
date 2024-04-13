@@ -26,7 +26,7 @@ const AboutPage = () => {
         //         Hi there! I'm the proud creator of this site, which I built with Gatsby.
         //     </p>
         // </main>
-        <Layout pageTitle="About Me">
+        <Layout pageTitle="About Ang">
         <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
         </Layout>
     )
