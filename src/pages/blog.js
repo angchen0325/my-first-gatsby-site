@@ -1,17 +1,32 @@
 import * as React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
-const BlogPage = () => {
+const BlogPage = ({ data}) => {
   return (
     <Layout pageTitle="My Blog Posts">
-      <p>My cool posts will go in here, and I'll be using markdown to format them.
-        <br></br>
-        Let's make our dream!
-      </p>
+      <ul>
+        {
+          data.allFile.nodes.map(
+            node => (
+            <li key={node.name}>{node.name}</li>
+        ))
+        }
+      </ul>
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query {
+    allFile {
+      nodes {
+        name
+      }
+    }
+  } 
+`
 
 export const Head = () => <Seo title="My Blog Posts" />
 
